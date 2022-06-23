@@ -1,0 +1,13 @@
+﻿
+
+	Types                                            HelperMethod
+
+	ViewResult											View()
+	PartialViewResult								PartialView()
+	ContentResult										Content()
+	RedirectResult										Redirect()
+	RedirectToRouteResult							RedirectToAction()
+	JsonResult											Json()
+	fileResult											 File()
+	HttpNotFoundResult								HttpNotFound()
+

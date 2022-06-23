@@ -10,6 +10,7 @@ namespace Vidly.Controllers
     {
         public ActionResult Index()
         {
+           
             return View();
         }
 
@@ -24,7 +25,10 @@ namespace Vidly.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            // return RedirectToAction("Edit", "Movies", new { id = 100 });
+
             return View();
+
         }
     }
 }
