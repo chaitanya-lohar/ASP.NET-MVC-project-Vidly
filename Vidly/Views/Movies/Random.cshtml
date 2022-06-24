@@ -1,9 +1,47 @@
-﻿@model Vidly.Models.Movie
+﻿@using Vidly.Models
+@model Vidly.ViewModel.RandomMovieViewModel
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Id</h2>
-<h2>@Model.Name</h2>
+@*<h2>@Model.Id</h2>
+<h2>@Model.Name</h2>*@
+
+@*<h2>@( ((Movie)ViewData["Movies"]).Name)</h2>
+<h2>@( ((Movie)ViewData["Movies"]).Id)</h2>
+
+<h3>@ViewBag.Movies.Name</h3>
+<h3>@ViewBag.Movies.Id</h3>*@
+
+@*<h3>@movie.Name</h3>
+<h3>@movie.Id</h3>*@
+
+
+
+@*
+this is multi-line comment    
+*@
+
+
+<h1>@Model.Movie.Name</h1>
+
+@if (Model.Customers.Count == 0)
+{
+    <p>No one has rented movie..</p>
+}
+else {
+    <ul>
+    @foreach (var customer in Model.Customers)
+        {
+            <li>@customer.Id</li>
+            <li>@customer.Name</li>
+            <li>@customer.City</li>
+        }
+    </ul>
+
+}
+
+
+
 
